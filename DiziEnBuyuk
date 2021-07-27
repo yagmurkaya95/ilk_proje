@@ -1,0 +1,37 @@
+#dahil <iostream>
+#dahil < zaman.h>
+ad alanı std kullanarak
+
+int ana()
+{ 
+    srand(zaman(0));//rastgele besleme fonksiyonu
+    
+    int sıcaklık= BOŞ;
+    
+    int dizi[ 10 ]  //dizi içeriği ,
+    
+    for(int i=0 ;<10; i++) //diziye rastgele değer atama dongusu
+    dizi[i]= rand()%10 +1; //0-10 (dahil) arasında değer ata.
+    
+    
+    cout<< "--------Önce---------"<< endl;
+    
+    for(int i=0; i<10; i++)
+    cout<<dizi[i]<<" ";
+    
+    cout<<endl<<"------Sonra------"<<endl;
+    sıcaklık=dizi[ 0 ];
+    for(int i= 0 ; i<10; i++)
+    {
+          for(int j=0 ; j<10 ; j++)
+          {
+               if (dizi[i]< dizi[j])
+               {
+                    sıcaklık=dizi[j];
+                    dizi[j]= dizi[i];
+                    dizi[i]=temp;
+                    
+                        }
+                       }
+              
+    
